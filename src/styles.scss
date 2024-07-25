@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --atlead-header-height: 100px;
+    --atlead-banner-height: 120px;
+    --atlead-navigation-width: 280px;
+
+    --atlead-primary-background-color: rgb(255, 255, 255);
+    --atlead-secondary-background-color: rgb(245, 245, 245);
+    --atlead-third-background-color: rgb(235, 235, 235);
+    --atlead-fourth-background-color: rgb(225, 225, 225);
+
+
+    --atlead-primary-color: #da4343;
+    --atlead-primary-color-hover: #cf3e3e;
+    --atlead-primary-color-active: #c33a3a;
+
+    --atlead-primary-light-text-color: #fff; 
+    --atlead-primary-dark-text-color: #000; 
+    --atlead-secondary-dark-text-color: #ababab; 
+}
+
+* {
+    transition: .075s ease-in-out 0s all;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+}

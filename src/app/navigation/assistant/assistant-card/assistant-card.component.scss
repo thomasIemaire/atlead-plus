@@ -1,0 +1,41 @@
+.assistant-card-container {
+    border-radius: 4px;
+    padding: 32px;
+    border: 1px solid var(--atlead-primary-color-active);
+    background-color: var(--atlead-primary-color);
+    color: var(--atlead-primary-background-color);
+    max-width: min-content;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.assistant-card-container:hover {
+    background-color: var(--atlead-primary-color-hover);
+}
+
+.assistant-card-container:active {
+    background-color: var(--atlead-primary-color-active);
+}
+
+.assistant-card-container .card-icon {
+    font-size: 1.5rem;
+}
+
+.assistant-card-container .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.assistant-card-container .card-content .card-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.assistant-card-container .card-content .card-description {
+    font-size: 13px;
+    white-space: nowrap;
+}

@@ -1,0 +1,94 @@
+<div class="navigation-container">
+    <div class="brand-container">
+        <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M28.9993 5.26932L0.691098 10.5116C-0.305383 10.6961 -0.191433 12.1585 0.821605 12.1865L17.427 12.6446C17.9238 12.6583 18.3014 13.0958 18.2424 13.5892L16.883 24.959C16.775 25.8623 17.9753 26.2745 18.4451 25.4954L29.8764 6.53602C30.2526 5.91219 29.7155 5.13668 28.9993 5.26932Z"
+                fill="#DA4343" />
+            <path
+                d="M25.5672 2.11168C25.5672 3.27793 24.6218 4.22336 23.4555 4.22336C22.2893 4.22336 21.3439 3.27793 21.3439 2.11168C21.3439 0.945431 22.2893 0 23.4555 0C24.6218 0 25.5672 0.945431 25.5672 2.11168Z"
+                fill="#DA4343" />
+        </svg>
+        <div class="brand-title">
+            <span class="name">Atlead</span>
+            <span class="subtitle">plus</span>
+        </div>
+    </div>
+    <div class="group-navigation">
+        <div class="item-navigation" [routerLink]="['/planning']" [routerLinkActive]="['active']">
+            <div class="item-wrapper">
+                <i class="fa-solid fa-calendar"></i>
+                <div class="navigation-name">
+                    agenda
+                </div>
+            </div>
+        </div>
+        <div class="item-navigation" [routerLink]="['/wallet']" [routerLinkActive]="['active']">
+            <div class="item-wrapper">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="navigation-name">
+                    portefeuille
+                </div>
+            </div>
+        </div>
+        <div class="item-navigation" [routerLink]="['/statistics']" [routerLinkActive]="['active']">
+            <div class="item-wrapper">
+                <i class="fa-solid fa-chart-simple"></i>
+                <div class="navigation-name">
+                    statistiques
+                </div>
+            </div>
+            <div class="badge-navigation">
+                New
+            </div>
+        </div>
+        <div class="item-navigation" [routerLink]="['/customers']" [routerLinkActive]="['active']">
+            <div class="item-wrapper">
+                <i class="fa-solid fa-user"></i>
+                <div class="navigation-name">
+                    clients
+                </div>
+            </div>
+        </div>
+        <div class="item-navigation" [routerLink]="['/plans']" [routerLinkActive]="['active']">
+            <div class="item-wrapper">
+                <i class="fa-solid fa-cube"></i>
+                <div class="navigation-name">
+                    offres
+                </div>
+            </div>
+        </div>
+        <div class="item-navigation" [routerLink]="['/assistant']" [routerLinkActive]="['active']">
+            <div class="item-wrapper">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <div class="navigation-name">
+                    assistant iA
+                </div>
+            </div>
+        </div>
+        <div class="item-navigation" [routerLink]="['/messages']" [routerLinkActive]="['active']">
+            <div class="item-wrapper">
+                <i class="fa-solid fa-message"></i>
+                <div class="navigation-name">
+                    messagerie
+                </div>
+            </div>
+            <div class="badge-navigation">
+                22
+            </div>
+        </div>
+        <div class="item-navigation" [routerLink]="['/settings']" [routerLinkActive]="['active']">
+            <div class="item-wrapper">
+                <i class="fa-solid fa-gear"></i>
+                <div class="navigation-name">
+                    parametres
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="complementary-navigation">
+        <div class="next-plan">
+            <i class="fa-solid fa-fire"></i>
+            Passer à la vitesse supérieure
+        </div>
+    </div>
+</div>

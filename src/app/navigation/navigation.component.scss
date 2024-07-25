@@ -1,0 +1,142 @@
+.navigation-container {
+    width: var(--atlead-navigation-width);
+    max-height: 100vh;
+    min-height: 100vh;
+    background-color: var(--atlead-secondary-background-color);
+    border-right: 1px solid var(--atlead-third-background-color);
+}
+
+.navigation-container .brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: var(--atlead-header-height);
+    max-height: var(--atlead-header-height);
+}
+
+.navigation-container .brand-container svg {
+    width: 2.8em;
+    height: 2.8em;
+}
+
+.navigation-container .brand-container .brand-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .5px;
+    user-select: none;
+}
+
+.navigation-container .brand-container .brand-title .name {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.navigation-container .brand-container .brand-title .subtitle {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.navigation-container .group-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-bottom: 1px solid var(--atlead-third-background-color);
+}
+
+.navigation-container .group-navigation .item-navigation {
+    min-height: 40px;
+    max-height: 40px;
+    width: calc(100% - 32px);
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--atlead-secondary-dark-text-color);
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.navigation-container .group-navigation .item-navigation:hover,
+.navigation-container .group-navigation .active {
+    background-color: var(--atlead-primary-color);
+    color: var(--atlead-secondary-background-color);
+}
+
+.navigation-container .group-navigation .active:hover,
+.navigation-container .group-navigation .active:hover .badge-navigation {
+    background-color: var(--atlead-primary-color-hover);
+}
+
+.navigation-container .group-navigation .active:active,
+.navigation-container .group-navigation .active:active .badge-navigation {
+    background-color: var(--atlead-primary-color-active);
+}
+
+.navigation-container .group-navigation .item-navigation .item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navigation-container .group-navigation .item-navigation .item-wrapper i {
+    max-width: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-container .group-navigation .item-navigation .item-wrapper .navigation-name {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.navigation-container .group-navigation .item-navigation .badge-navigation {
+    padding: 2px 4px;
+    border-radius: 3px;
+    background-color: var(--atlead-primary-color);
+    color: var(--atlead-secondary-background-color);
+    font-size: 10px;
+    margin-right: 16px;
+}
+
+.navigation-container .complementary-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 2 * 16px);
+    padding: 16px;
+}
+
+.navigation-container .complementary-navigation .next-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    background-color: var(--atlead-primary-color);
+    border-radius: 4px;
+    padding: 8px 0;
+    color: var(--atlead-secondary-background-color);
+    font-size: 12px;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+}
+
+.navigation-container .complementary-navigation .next-plan:hover {
+    background-color: var(--atlead-primary-color-hover);
+}
+
+.navigation-container .complementary-navigation .next-plan:active {
+    background-color: var(--atlead-primary-color-active);
+}

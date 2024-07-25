@@ -1,0 +1,17 @@
+.main-container {
+    display: flex;
+}
+
+.main-container .body-container {
+    width: calc(100vw - var(--atlead-navigation-width));
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+.main-container .body-container .body-content {
+    width: calc(100% - 2 * 32px);
+    height: calc(100vh - var(--atlead-header-height) - 2 * 32px);
+    padding: 32px;
+    background-color: var(--atlead-primary-background-color);
+    position: relative;
+}

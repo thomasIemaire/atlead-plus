@@ -1,0 +1,17 @@
+<div class="assistant-container">
+    <div class="assistant-content">
+        <div class="content-title">Votre assistant IA</div>
+        <div class="content-subtitle">Nous vous aidons à vous développer et à vous démarquer.</div>
+    </div>
+    <div class="group-card">
+        <app-assistant-card [routerLink]="['./communicate']" cardName="Communiquer" cardDescription="Accélérez votre communication grâce à notre IA">
+            <i class="fa-solid fa-bolt"></i>
+        </app-assistant-card>
+        <app-assistant-card [routerLink]="['./produce']" cardName="Produire" cardDescription="Construisez des programmes adaptés pour vos clients">
+            <i class="fa-solid fa-image-portrait"></i>
+        </app-assistant-card>
+        <app-assistant-card [routerLink]="['./questions']" cardName="Questionner" cardDescription="Posez vos questions et obtenez des réponses détaillées">
+            <i class="fa-solid fa-circle-question"></i>
+        </app-assistant-card>
+    </div>
+</div>
