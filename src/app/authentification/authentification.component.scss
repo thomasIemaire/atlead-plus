@@ -1,0 +1,160 @@
+.authentification-container {
+    max-height: 100vh;
+    min-height: 100vh;
+    max-width: 100vw;
+    min-width: 100vw;
+    display: flex;
+    background-color: var(--atlead-light-color-0);
+}
+
+.authentification-container .left-section,
+.authentification-container .right-section {
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 50%;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authentification-container .left-section {
+    background-color: var(--atlead-primary-color-0);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 128px;
+}
+
+.form .group-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.form .group-form .item-form,
+.form .group-form .submit-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.form .group-form .submit-form input {
+    background-color: var(--atlead-primary-color-0);
+    color: var(--atlead-light-color-0);
+    transition: .075s ease-in-out 0s all;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form .group-form .submit-form input:hover {
+    background-color: var(--atlead-primary-color-1);
+}
+
+.form .group-form .submit-form input:active {
+    background-color: var(--atlead-primary-color-2);
+}
+
+.form .group-form .item-form input {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--atlead-light-color-1);
+    width: 100%;
+    padding: 4px 8px;
+    margin: 0;
+    font-size: 16px;
+    transition: .075s ease-in-out 0s all;
+}
+
+.form .group-form .item-form input:focus {
+    outline: none;
+    border-bottom: solid 1px var(--atlead-primary-color-0);
+}
+
+.form .group-form .item-form label {
+    position: absolute;
+    display: flex;
+    align-items: start;
+    gap: 4px;
+    left: 8px;
+    top: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .075s ease-in-out 0s all;
+    cursor: text;
+}
+
+.form .group-form .item-form input:focus + label,
+.form .group-form .item-form input:valid + label {
+    font-size: 12px;
+    top: -16px;
+}
+
+.form .group-form .item-form input:focus + label {
+    color: var(--atlead-primary-color-0);
+    cursor: default;
+}
+
+.form .form-header .brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.form .form-header .brand-container svg {
+    width: 5.6em;
+    height: 5.6em;
+}
+
+.form .form-header .brand-container .brand-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    user-select: none;
+    color: var(--atlead-dark-color-0);
+}
+
+.form .form-header .brand-container .brand-title .name {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2.8rem;
+}
+
+.form .form-header .brand-container .brand-title .subtitle {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.form .form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.form .form-footer .password-forgotten {
+    color: var(--atlead-primary-color-0);
+    text-decoration: underline;
+    font-size: 13px;
+    cursor: pointer;
+}

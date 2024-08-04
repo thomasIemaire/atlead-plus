@@ -1,18 +1,18 @@
 .header-container {
-    padding: 0px var(--atlead-header-height);
+    padding: 0px 32px;
     width: 100%;
-    height: var(--atlead-header-height);
-    background-color: var(--atlead-secondary-background-color);
+    height: var(--atlead-height-header);
+    background-color: var(--atlead-light-color-0);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border-bottom: 1px solid var(--atlead-third-background-color);
+    border-bottom: 1px solid var(--atlead-light-color-2);
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
-.header-container .account-container {
+.header-container .user-container {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-.header-container .account-container .informations {
+.header-container .user-container .informations {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -28,25 +28,27 @@
     line-height: 1;
 }
 
-.header-container .account-container .informations .username {
+.header-container .user-container .informations .fullname {
     font-weight: 600;
     font-size: 16px;
 }
 
-.header-container .account-container .informations .profilname {
-    color: var(--atlead-secondary-dark-text-color);
+.header-container .user-container .informations .username {
+    color: var(--atlead-light-color-5);
     font-size: 13px;
 }
 
-.header-container .account-container .avatar {
+.header-container .user-container .avatar {
     min-width: 60px;
     max-width: 60px;
     min-height: 60px;
     max-height: 60px;
-    border-radius: 60px;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--atlead-primary-color);
-    color: var(--atlead-primary-background-color);
+    background-color: var(--atlead-primary-color-0);
+    color: var(--atlead-light-color-0);
+    font-weight: 600;
+    font-size: 18px;
 }

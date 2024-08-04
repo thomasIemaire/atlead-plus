@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { GridstackModule, GridstackComponent  } from 'gridstack/dist/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,15 +8,16 @@ import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PlanningComponent } from './navigation/planning/planning.component';
 import { WalletComponent } from './navigation/wallet/wallet.component';
-import { StatisticsComponent } from './navigation/statistics/statistics.component';
 import { PlansComponent } from './navigation/plans/plans.component';
 import { CustomersComponent } from './navigation/customers/customers.component';
 import { MessagesComponent } from './navigation/messages/messages.component';
 import { SettingsComponent } from './navigation/settings/settings.component';
 import { AssistantComponent } from './navigation/assistant/assistant.component';
-import { AssistantCardComponent } from './navigation/assistant/assistant-card/assistant-card.component';
-import { AssistantCommunicateComponent } from './navigation/assistant/assistant-communicate/assistant-communicate.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
+import { BannerComponent } from './common/banner/banner.component';
+import { PostsComponent } from './navigation/posts/posts.component';
+import { SimpleCardComponent } from './common/widgets/simple-card/simple-card.component';
+import { SimpleChartComponent } from './common/widgets/simple-chart/simple-chart.component';
 
 @NgModule({
   declarations: [
@@ -24,21 +26,29 @@ import { AuthentificationComponent } from './authentification/authentification.c
     NavigationComponent,
     PlanningComponent,
     WalletComponent,
-    StatisticsComponent,
     PlansComponent,
     CustomersComponent,
     MessagesComponent,
     SettingsComponent,
     AssistantComponent,
-    AssistantCardComponent,
-    AssistantCommunicateComponent,
-    AuthentificationComponent
+    AuthentificationComponent,
+    BannerComponent,
+    PostsComponent,
+    SimpleCardComponent,
+    SimpleChartComponent
   ],
   imports: [
     BrowserModule,
+    GridstackModule,
     AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  constructor() {
+    GridstackComponent.addComponentToSelectorType([]);
+  }
+
+}

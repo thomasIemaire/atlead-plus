@@ -17,4 +17,8 @@ export class UserService {
   public getUser(): User | null {
     return this.user;
   }
+
+  public remove(): void {
+    this.user = null;
+  }
 }

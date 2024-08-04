@@ -1,0 +1,19 @@
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    min-width: 100%;
+    height: var(--atlead-height-banner);
+    background-color: var(--atlead-primary-color-0);
+    color: var(--atlead-light-color-0);
+    box-shadow: 0 0 12px -5px var(--atlead-primary-color-0);
+    border-radius: 16px;
+}
+
+.banner-container .banner-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}

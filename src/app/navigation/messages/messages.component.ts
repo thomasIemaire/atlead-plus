@@ -1,24 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-messages',
   templateUrl: './messages.component.html',
   styleUrl: './messages.component.scss'
 })
-export class MessagesComponent implements OnInit {
+export class MessagesComponent {
 
-  public profilname: string | null = null;
-
-  constructor(
-    private route: ActivatedRoute
-  ) { }
-
-  ngOnInit() {
-    this.changeDiscussion(this.route.snapshot.params['id']);
-  }
-
-  public changeDiscussion(profilname: string): void {
-    this.profilname = profilname;
-  }
 }

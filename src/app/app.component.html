@@ -1,15 +1,17 @@
 <!-- User connected -->
-<div *ngIf="tokenService.getToken()" class="main-container">
+<div *ngIf="(tokenService.getTokenObservable() | async) as token" class="main-container">
   <app-navigation></app-navigation>
   <div class="body-container">
     <app-header></app-header>
-    <div class="body-content">
-      <router-outlet></router-outlet>
+    <div class="body-wrapper">
+      <div class="body-content">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- User not connected -->
-<div *ngIf="!tokenService.getToken()" class="main-container">
+<div *ngIf="!(tokenService.getTokenObservable() | async)" class="main-container">
   <router-outlet></router-outlet>
 </div>

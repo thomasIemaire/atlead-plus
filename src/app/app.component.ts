@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { TokenService } from './services/token.service';
 import { UserService } from './services/user.service';
-import { Router } from '@angular/router';
+import { NavigationStart, Router } from '@angular/router';
 import { ScreenSizeService } from './services/screen-size.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +12,13 @@ import { ScreenSizeService } from './services/screen-size.service';
 })
 export class AppComponent implements OnInit {
 
+  private tokenSubscription: Subscription | undefined;
+
   constructor(
     public screenSizeService: ScreenSizeService,
     public tokenService: TokenService,
     public userService: UserService,
-    private router: Router
+    public router: Router
   ) {
     window.addEventListener('resize', () => {
       this.screenSizeService.setScreenSize(window.innerWidth);
@@ -23,11 +26,25 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.tokenService.setToken('0');
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationStart) {
+        const token = this.tokenService.getToken();
 
-    // User not connected
-    if (!this.tokenService.getToken()) this.router.navigate(['login']);
-    // User connected
-    else this.router.navigate(['messages']);
+        if (!token && event.url !== '/login')
+          this.router.navigate(['login']);
+        else if (token && event.url === '/login')
+          this.router.navigate(['planning']);
+      }
+    });
+
+    this.tokenSubscription = this.tokenService.getTokenObservable().subscribe(token => {
+      if (!token) this.router.navigate(['login']);
+    });
+  }
+
+  ngOnDestroy(): void {
+    if (this.tokenSubscription) {
+      this.tokenSubscription.unsubscribe();
+    }
   }
 }

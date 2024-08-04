@@ -2,37 +2,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --atlead-header-height: 100px;
-    --atlead-banner-height: 120px;
-    --atlead-navigation-width: 280px;
+    --atlead-height-header: 130px;
+    --atlead-height-banner: 120px;
+    --atlead-width-navigation: 240px;
 
-    --atlead-primary-background-color: rgb(255, 255, 255);
-    --atlead-secondary-background-color: rgb(245, 245, 245);
-    --atlead-third-background-color: rgb(235, 235, 235);
-    --atlead-fourth-background-color: rgb(225, 225, 225);
+    --atlead-light-color-0: rgb(250, 250, 250);
+    --atlead-light-color-1: rgb(245, 245, 245);
+    --atlead-light-color-2: rgb(240, 240, 240);
+    --atlead-light-color-3: rgb(235, 235, 235);
+    --atlead-light-color-4: rgb(230, 230, 230);
+    --atlead-light-color-5: rgb(225, 225, 225);
+    --atlead-light-color-6: rgb(220, 220, 220);
+    --atlead-light-color-7: rgb(215, 215, 215);
 
+    --atlead-dark-color-0: rgb(5, 5, 5);
+    --atlead-dark-color-1: rgb(15, 15, 15);
+    --atlead-dark-color-2: rgb(25, 25, 25);
+    --atlead-dark-color-3: rgb(35, 35, 35);
+    --atlead-dark-color-4: rgb(45, 45, 45);
+    --atlead-dark-color-5: rgb(55, 55, 55);
+    --atlead-dark-color-6: rgb(65, 65, 65);
+    --atlead-dark-color-7: rgb(75, 75, 75);
 
-    --atlead-primary-color: #da4343;
-    --atlead-primary-color-hover: #cf3e3e;
-    --atlead-primary-color-active: #c33a3a;
+    --atlead-primary-color-0: #e62644;
+    --atlead-primary-color-1: #c9213c;
+    --atlead-primary-color-2: #ac1d33;
+    --atlead-primary-color-3: #90182b; 
 
-    --atlead-primary-light-text-color: #fff; 
-    --atlead-primary-dark-text-color: #000; 
-    --atlead-secondary-dark-text-color: #ababab; 
+    --atlead-secondary-color-0: #fab31e;
+    --atlead-secondary-color-1: #db9d1a;
+    --atlead-secondary-color-2: #bb8616;
+    --atlead-secondary-color-3: #9c7013;
+
+    --atlead-third-color-0: #0079c2;
+    --atlead-third-color-1: #006aaa;
+    --atlead-third-color-2: #005b92;
+    --atlead-third-color-3: #004c79;
+
+    --atlead-fourth-color-0: #009641;
+    --atlead-fourth-color-1: #008339;
+    --atlead-fourth-color-2: #007131;
+    --atlead-fourth-color-3: #005e29;
 }
 
-* {
+:root {
+    --atlead-padding-widget: 24px;
+}
+
+
+.transition {
     transition: .075s ease-in-out 0s all;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    max-width: 100vw;
+    font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden !important;
 }
 
 p {
     margin: 0;
+}
+
+.grid-stack-placeholder > .placeholder-content {
+    border-radius: 16px;
+}
+
+.grid-stack-item-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--atlead-light-color-0);
+    box-shadow: 0 0 10px var(--atlead-light-color-5);
+    border-radius: 16px;
+}
+
+.grid-container {
+    margin-top: 22px;
+    width: calc(100% + 20px);
+    position: relative;
+    top: 0;
+    left: -10px;
 }

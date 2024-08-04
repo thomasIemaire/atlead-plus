@@ -1,0 +1,26 @@
+<div class="widget-container">
+    <div class="simple-card-widget">
+        <div class="top-content">
+            <span *ngIf="skeleton" class="skeleton"></span>
+            <span *ngIf="!skeleton">{{ title }}</span>
+        </div>
+        <div class="bottom-content">
+            <div class="left-content">
+                <span *ngIf="skeleton" class="skeleton"></span>
+                <span *ngIf="!skeleton">{{ value }}</span>
+            </div>
+            <div class="right-content">
+                <span *ngIf="skeleton" class="skeleton sk-value"></span>
+                <span *ngIf="!skeleton" class="evolution"
+                [style]="'color:' + (evolution == 0 ? 'var(--atlead-secondary-color-0);' :
+                         evolution > 0 ? 'var(--atlead-fourth-color-0);' : 'var(--atlead-primary-color-0);')">
+                    <i class="fa-solid fa-sort-up"
+                    [style]="'rotate:' + (evolution < 0 ? '-180deg;' : '0deg;')"></i>
+                    <span>{{ evolution }}%</span>
+                </span>
+                <span *ngIf="skeleton" class="skeleton sk-key"></span>
+                <span *ngIf="!skeleton" class="evolution-duration">{{ evolutionDuration }}</span>
+            </div>
+        </div>
+    </div>
+</div>
