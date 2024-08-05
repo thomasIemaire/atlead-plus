@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GridstackModule, GridstackComponent  } from 'gridstack/dist/angular';
+import { NgApexchartsModule } from 'ng-apexcharts'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { BannerComponent } from './common/banner/banner.component';
 import { PostsComponent } from './navigation/posts/posts.component';
 import { SimpleCardComponent } from './common/widgets/simple-card/simple-card.component';
 import { SimpleChartComponent } from './common/widgets/simple-chart/simple-chart.component';
+import { GridstackWidgetsComponent } from './common/gridstack-widgets/gridstack-widgets.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +37,14 @@ import { SimpleChartComponent } from './common/widgets/simple-chart/simple-chart
     BannerComponent,
     PostsComponent,
     SimpleCardComponent,
-    SimpleChartComponent
+    SimpleChartComponent,
+    GridstackWidgetsComponent
   ],
   imports: [
     BrowserModule,
     GridstackModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

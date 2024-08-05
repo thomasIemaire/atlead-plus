@@ -3,4 +3,6 @@
     display: flex;
     align-items: center;
     padding: var(--atlead-padding-widget);
+    overflow: hidden;
+    height: calc(100% - 48px);
 }

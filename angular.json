@@ -44,7 +44,8 @@
               "gridstack/dist/gridstack.min.css"
             ],
             "scripts": [
-              "gridstack/dist/gridstack-all.js"
+              "gridstack/dist/gridstack-all.js",
+              "node_modules/apexcharts/dist/apexcharts.min.js"
             ]
           },
           "configurations": {
@@ -107,11 +108,15 @@
               "gridstack/dist/gridstack.min.css"
             ],
             "scripts": [
-              "gridstack/dist/gridstack-all.js"
+              "gridstack/dist/gridstack-all.js",
+              "node_modules/apexcharts/dist/apexcharts.min.js"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "da603276-a9ee-44fb-a12c-3db79540caf9"
   }
 }

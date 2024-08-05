@@ -28,8 +28,7 @@ const routes: Routes = [
   { path: 'settings', component: SettingsComponent, canActivate: [AuthguardService] },
   { path: 'wallet', component: WalletComponent, canActivate: [AuthguardService] },
 
-  // Optionally, redirect to a default route if no path matches
-  { path: '**', redirectTo: 'login' }
+  { path: '**', redirectTo: 'planning' }
 ];
 
 @NgModule({
