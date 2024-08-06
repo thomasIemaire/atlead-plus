@@ -16,7 +16,7 @@ export class BannerComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if (!this.appearanceService.banner)
+    if (!this.appearanceService.getAppearanceOptions().banner)
       document.documentElement.style.setProperty('--atlead-height-banner', '0px');
     else
       document.documentElement.style.setProperty('--atlead-height-banner', '120px');

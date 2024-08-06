@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GridStackOptions, GridStackWidget } from 'gridstack';
 import { BarChartOptions } from '../../models/charts/bar-chart.model';
 import { PieChartOptions } from '../../models/charts/pie-chart.model';
-import { GridstackWidgetsService } from '../../services/gridstack-widgets.service';
 
 @Component({
   selector: 'app-wallet',
@@ -10,10 +8,6 @@ import { GridstackWidgetsService } from '../../services/gridstack-widgets.servic
   styleUrl: './wallet.component.scss'
 })
 export class WalletComponent implements OnInit {
-
-  public readonly KEY_WALLET_WIDGETS: string = 'wallet';
-
-  public hash: string = '';
 
   // public items: GridStackWidget[] = [
   //   { w: 3, h: 3, noResize: true, id: 'simple-card' },
@@ -28,14 +22,11 @@ export class WalletComponent implements OnInit {
   // public barChartOptions: Partial<BarChartOptions> | undefined;
   // public pieChartOptions: Partial<PieChartOptions> | undefined;
 
-  constructor(
-    private gridstackWidgetsService: GridstackWidgetsService
-  ) { }
+  constructor() { }
 
   public ngOnInit() {
     // this.barChartOptions = this.initBarChart();
     // this.pieChartOptions = this.initPieChart();
-    this.hash = this.gridstackWidgetsService.getWidgets(this.KEY_WALLET_WIDGETS);
   }
 
   private initBarChart(): BarChartOptions {
