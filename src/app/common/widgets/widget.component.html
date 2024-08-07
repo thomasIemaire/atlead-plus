@@ -1,0 +1,15 @@
+<div class="widget-container">
+    @switch (type) {
+    @case ('simple-card') {
+    <app-simple-card [rule]="rule"></app-simple-card>
+    }
+    @case ('long-chart') {
+    <app-simple-chart [rule]="rule"></app-simple-chart>
+    }
+    @default {
+    <div class="widget-error">
+        Il semblerait que le widget {{ id }} ne fonctionne pas bien.
+    </div>
+    }
+    }
+</div>

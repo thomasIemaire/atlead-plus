@@ -4,6 +4,38 @@ const appearance = {
     },
     widgets: [
         {
+            id: "home",
+            widgets: [
+                {
+                    x: 0,
+                    y: 0,
+                    w: 3,
+                    h: 3,
+                    id: "simple-card:income",
+                    rule: "income",
+                    noResize: true
+                },
+                {
+                    x: 3,
+                    y: 0,
+                    w: 3,
+                    h: 3,
+                    id: "simple-card:customers",
+                    rule: "customers",
+                    noResize: true
+                },
+                {
+                    x: 0,
+                    y: 3,
+                    w: 3,
+                    h: 4,
+                    id: "next-event:???",
+                    rule: "???",
+                    noResize: true
+                }
+            ]
+        },
+        {
             id: "planning",
             widgets: [
                 {
@@ -48,7 +80,7 @@ const appearance = {
                     noResize: true
                 },
                 {
-                    x: 6,
+                    x: 3,
                     y: 0,
                     w: 3,
                     h: 3,
@@ -57,7 +89,7 @@ const appearance = {
                     noResize: true
                 },
                 {
-                    x: 9,
+                    x: 6,
                     y: 0,
                     w: 3,
                     h: 3,
@@ -66,7 +98,7 @@ const appearance = {
                     noResize: true
                 },
                 {
-                    x: 3,
+                    x: 9,
                     y: 0,
                     w: 3,
                     h: 3,
@@ -111,8 +143,8 @@ const appearance = {
                     y: 0,
                     w: 3,
                     h: 3,
-                    id: "simple-card:customer",
-                    rule: "customer",
+                    id: "simple-card:customers",
+                    rule: "customers",
                     noResize: true
                 }
             ]

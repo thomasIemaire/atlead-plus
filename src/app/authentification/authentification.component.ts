@@ -20,7 +20,7 @@ export class AuthentificationComponent {
 
   public login(): void {
     this.tokenService.setToken('0')
-    this.router.navigate(['planning']);
+    this.router.navigate(['home']);
   }
   
 }

@@ -1,8 +1,6 @@
-.widget-container {
-    width: calc(100% - 2 * var(--atlead-padding-widget));
-    display: flex;
-    align-items: center;
-    padding: var(--atlead-padding-widget);
-    overflow: hidden;
-    height: calc(100% - 48px);
+.simple-chart-widget {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
 }

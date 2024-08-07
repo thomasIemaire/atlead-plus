@@ -20,6 +20,8 @@ import { PostsComponent } from './navigation/posts/posts.component';
 import { SimpleCardComponent } from './common/widgets/simple-card/simple-card.component';
 import { SimpleChartComponent } from './common/widgets/simple-chart/simple-chart.component';
 import { GridstackWidgetsComponent } from './common/gridstack-widgets/gridstack-widgets.component';
+import { WidgetComponent } from './common/widgets/widget.component';
+import { HomeComponent } from './navigation/home/home.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { GridstackWidgetsComponent } from './common/gridstack-widgets/gridstack-
     PostsComponent,
     SimpleCardComponent,
     SimpleChartComponent,
-    GridstackWidgetsComponent
+    GridstackWidgetsComponent,
+    WidgetComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

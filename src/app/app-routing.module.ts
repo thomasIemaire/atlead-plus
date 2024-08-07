@@ -11,6 +11,7 @@ import { SettingsComponent } from './navigation/settings/settings.component';
 import { AssistantComponent } from './navigation/assistant/assistant.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
 import { PostsComponent } from './navigation/posts/posts.component';
+import { HomeComponent } from './navigation/home/home.component';
 
 const routes: Routes = [
   { path: 'login', component: AuthentificationComponent },
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'assistant', component: AssistantComponent, canActivate: [AuthguardService] },
 
   { path: 'customers', component: CustomersComponent, canActivate: [AuthguardService] },
+
+  { path: 'home', component: HomeComponent, canActivate: [AuthguardService] },
   
   { path: 'messages', component: MessagesComponent, canActivate: [AuthguardService] },
   { path: 'messages/:id', component: MessagesComponent, canActivate: [AuthguardService] },
@@ -28,7 +31,7 @@ const routes: Routes = [
   { path: 'settings', component: SettingsComponent, canActivate: [AuthguardService] },
   { path: 'wallet', component: WalletComponent, canActivate: [AuthguardService] },
 
-  { path: '**', redirectTo: 'planning' }
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

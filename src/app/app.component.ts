@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
         if (!token && event.url !== '/login')
           this.router.navigate(['login']);
         else if (token && event.url === '/login')
-          this.router.navigate(['planning']);
+          this.router.navigate(['home']);
       }
     });
 

@@ -1,8 +1,7 @@
 <div class="grid-container">
     <gridstack [options]="options" (changeCB)="updateGrid($event)">
         <gridstack-item *ngFor="let widget of widgets" [options]="widget.options!">
-            <app-simple-card [skeleton]="true" [title]="widget.id!" value="€125,00" [evolution]="-5"
-                style="width: 100%;"></app-simple-card>
+            <app-widget [id]="widget.id!" [rule]="widget.rule!" ></app-widget>
         </gridstack-item>
     </gridstack>
 </div>

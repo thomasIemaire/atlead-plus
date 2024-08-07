@@ -1,3 +1,5 @@
-<div class="widget-container">
-    <ng-content></ng-content>
+<div class="simple-chart-widget">
+    <apx-chart [series]="barChartOptions!.series!" [chart]="barChartOptions!.chart!" [legend]="barChartOptions!.legend!"
+        [dataLabels]="barChartOptions!.dataLabels!" [colors]="barChartOptions!.colors!"
+        [plotOptions]="barChartOptions!.plotOptions!" style="width: 100%;"></apx-chart>
 </div>
