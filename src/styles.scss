@@ -4,7 +4,12 @@
 :root {
     --atlead-height-header: 130px;
     --atlead-height-banner: 120px;
+    --atlead-height-filters: 100px;
     --atlead-width-navigation: 240px;
+
+    --atlead-transition-short: .1s ease-in-out 0s all;
+    --atlead-transition-middle: .35s ease-in-out 0s all;
+    --atlead-transition-long: .7s ease-in-out 0s all;
 
     --atlead-light-color-0: rgb(250, 250, 250);
     --atlead-light-color-1: rgb(245, 245, 245);
@@ -57,7 +62,7 @@ apx-chart {
 }
 
 .transition {
-    transition: .075s ease-in-out 0s all;
+    transition: var(--atlead-transition-short);
 }
 
 html, body {
@@ -90,7 +95,7 @@ p {
 }
 
 .grid-container {
-    margin-top: 22px;
+    margin-top: 10px;
     width: calc(100% + 20px);
     position: relative;
     top: 0;

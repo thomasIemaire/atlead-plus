@@ -24,7 +24,7 @@
     border-radius: 4px;
     background-color: var(--atlead-light-color-2);
     font-size: 15px;
-    padding: 8px 8px;
+    padding: 8px 8px 8px 30px;
 }
 
 .header-container .search-container label {
@@ -36,26 +36,55 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: var(--atlead-transition-short);
     color: var(--atlead-light-color-7);
     cursor: text;
 }
 
-.header-container .search-container input:valid + label,
-.header-container .search-container input:focus + label {
+.header-container .search-container label i {
+    cursor: pointer !important;
+}
+
+.header-container .search-container input:valid+label i,
+.header-container .search-container input:focus+label i {
+    color: var(--atlead-dark-color-0);
+}
+
+.header-container .search-container input:valid+label span,
+.header-container .search-container input:focus+label span {
     display: none;
 }
 
+.header-container .filters-container,
 .header-container .user-container {
     min-width: 35%;
     display: flex;
-    justify-content: end;
     align-items: center;
     gap: 16px;
     user-select: none;
+}
+
+.header-container .filters-container {
+    justify-content: start;
+    font-size: 14px;
+    color: var(--atlead-dark-color-0);
+    transition: var(--atlead-transition-short);
+}
+
+.header-container .user-container,
+.header-container .user-container .wrapper-user {
+    justify-content: end;
+}
+
+.header-container .user-container .wrapper-user,
+.header-container .filters-container .wrapper-filters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
     cursor: pointer;
 }
 
-.header-container .user-container .informations {
+.header-container .user-container .wrapper-user .informations {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -63,17 +92,17 @@
     line-height: 1;
 }
 
-.header-container .user-container .informations .fullname {
+.header-container .user-container .wrapper-user .informations .fullname {
     font-weight: 600;
     font-size: 16px;
 }
 
-.header-container .user-container .informations .username {
+.header-container .user-container .wrapper-user .informations .username {
     color: var(--atlead-light-color-5);
     font-size: 13px;
 }
 
-.header-container .user-container .avatar {
+.header-container .user-container .wrapper-user .avatar {
     min-width: 60px;
     max-width: 60px;
     min-height: 60px;

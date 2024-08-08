@@ -22,6 +22,7 @@ import { SimpleChartComponent } from './common/widgets/simple-chart/simple-chart
 import { GridstackWidgetsComponent } from './common/gridstack-widgets/gridstack-widgets.component';
 import { WidgetComponent } from './common/widgets/widget.component';
 import { HomeComponent } from './navigation/home/home.component';
+import { FiltersExpansionComponent } from './filters-expansion/filters-expansion.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { HomeComponent } from './navigation/home/home.component';
     GridstackWidgetsComponent,
     WidgetComponent,
     HomeComponent,
+    FiltersExpansionComponent,
   ],
   imports: [
     BrowserModule,
