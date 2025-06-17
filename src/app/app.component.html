@@ -1,1 +1,11 @@
-<router-outlet />
+<div class="app-container">
+    <div class="app-wrapper">
+        <atlead-app-sidebar />
+        <div class="app-content">
+            <router-outlet />
+            <atlead-dialog-success message="coucou" />
+            <!-- <p-toast /> -->
+            <!-- <p-confirmpopup /> -->
+        </div>
+    </div>
+</div>

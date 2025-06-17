@@ -1,0 +1,40 @@
+p-dialog {
+    .dialog-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        padding: 2.25rem 1rem;
+        user-select: none;
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .message {
+            font-size: .9rem;
+            color: #555;
+        }
+    }
+
+    .dialog-footer {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+
+        .button {
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+}
