@@ -7,6 +7,5 @@ import { DialogAlertComponent } from '../../atoms/dialog-alert/dialog-alert.comp
   templateUrl: './dialog-success.component.html',
   styleUrl: './dialog-success.component.scss'
 })
-export class DialogSuccessComponent {
-  @Input() message: string = 'Veuillez réessayer plus tard.';
+export class DialogSuccessComponent extends DialogAlertComponent {
 }

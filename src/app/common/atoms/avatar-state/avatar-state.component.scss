@@ -1,0 +1,41 @@
+.avatar-state-container {
+    width: 100%;
+    height: 100%;
+
+    .avatar-state-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .state-dot {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: var(--atlead-surface-200);
+            z-index: 2;
+
+            &.active {
+                background-color: green;
+            }
+
+            &.pending {
+                background-color: yellow;
+            }
+
+            &.inactive {
+                background-color: red;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -30%;
+                left: -30%;
+                width: 160%;
+                height: 160%;
+                border-radius: 50%;
+                background-color: #fff;
+                z-index: -1;
+            }
+        }
+    }
+}

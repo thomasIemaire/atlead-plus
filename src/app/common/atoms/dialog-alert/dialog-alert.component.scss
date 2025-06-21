@@ -1,3 +1,7 @@
+::ng-deep .p-dialog-header {
+    padding: 1.25rem 1.25rem 0 1.25rem !important;
+}
+
 p-dialog {
     .dialog-wrapper {
         display: flex;
@@ -5,8 +9,12 @@ p-dialog {
         align-items: center;
         gap: 1rem;
         text-align: center;
-        padding: 2.25rem 1rem;
+        padding: 1.25rem;
         user-select: none;
+
+        &.header {
+            padding-top: 0 !important;
+        }
 
         .icon {
             display: flex;

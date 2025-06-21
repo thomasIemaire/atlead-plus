@@ -1,0 +1,7 @@
+<div class="avatar-container" [style.width]="size(width)" [style.height]="size(height)">
+    <div class="avatar-wrapper" [class.skeleton]="!src" [class.entity]="type === 'entity'">
+        @if (src) {
+        <img [src]="src" draggable="false">
+        }
+    </div>
+</div>

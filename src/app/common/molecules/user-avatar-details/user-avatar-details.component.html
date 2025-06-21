@@ -1,0 +1,11 @@
+<div class="user-avatar-details-container" [style.width]="width" [style.height]="height">
+    <div class="user-avatar-details-wrapper">
+        <atlead-avatar [type]="type" [height]="height" [width]="width" [src]="src" />
+        @if (details?.state) {
+        <atlead-avatar-state [state]="details!.state!" />
+        }
+        @if (details?.entity) {
+        <atlead-avatar type="entity" height="100%" [src]="details!.entity!" />
+        }
+    </div>
+</div>

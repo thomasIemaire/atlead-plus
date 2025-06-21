@@ -1,0 +1,13 @@
+.avatar-details-container {
+    .avatar-details-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        white-space: nowrap;
+
+        .details-subtitle {
+            font-size: 0.75em;
+            color: var(--atlead-text-muted-color);
+        }
+    }
+}

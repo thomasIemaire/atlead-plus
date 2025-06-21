@@ -1,11 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, NgModule } from '@angular/core';
 import { DialogModule } from 'primeng/dialog';
 import { AnimationOptions, LottieComponent } from 'ngx-lottie';
 import { ButtonModule } from 'primeng/button';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'atlead-dialog-alert',
-  imports: [ 
+  imports: [
+    CommonModule,
     DialogModule,
     LottieComponent,
     ButtonModule
@@ -20,8 +22,10 @@ export class DialogAlertComponent {
     autoplay: true,
     loop: true
   };
-  @Input() title: string = 'Title';
-  @Input() message: string = 'lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+  @Input() title: string = '';
+  @Input() message: string = '';
+  @Input() showHeader: boolean = false;
+  @Input() showFooter: boolean = false;
 
   public visible: boolean = true;
 
